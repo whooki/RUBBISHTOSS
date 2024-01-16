@@ -14,17 +14,11 @@ public class Waste extends Entity{
 
     GamePanel gp;
 
-
-
-
     static public BufferedImage[] images= new BufferedImage[19];
 
     BufferedImage image;
 
-
-
     public Waste(){
-
 
 
     }
@@ -48,13 +42,13 @@ public class Waste extends Entity{
         Random random = new Random();
         switch (lvl){
             case"plastic":
-                image = images[random.nextInt(4)];
+                image = images[random.nextInt(4)+15];
                 break;
             case"mix":
-                image = images[random.nextInt(4)];
+                image = images[random.nextInt(4)+5];
                 break;
             case"paper":
-                image = images[random.nextInt(4)];
+                image = images[random.nextInt(4)+10];
                 break;
             case"glass":
                 image = images[random.nextInt(4)];
